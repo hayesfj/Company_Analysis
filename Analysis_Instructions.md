@@ -217,10 +217,13 @@ All reports are rendered as **interactive HTML widgets** using `show_widget`. Ke
 - **Fiscal year labeling:** always clarify whether a fiscal year is calendar-aligned or offset (e.g., "FY2026 ended March 31, 2026").
 - **Data freshness:** always note the date of the most recent data used (e.g., "as of Q2 2026 results reported August 6, 2026").
 
-CRITICAL DATA RULES:
-- NEVER use cached or assumed price data. Always web_search for current stock prices, market data, and real-time metrics.
-- For any analysis dated "today" or "August 26, 2026," verify the date with web_search FIRST — do not rely on search result snippets that may be historical.
-- If a web_search returns data older than 7 days, re-search with more specific temporal keywords ("today," "this week") before proceeding.
-- If you cannot find current data, explicitly state: "I do not have access to current [X] data as of [date]. Last verified: [date]."
-- NEVER backfill missing data with older data, averages, or assumptions.
-- For stock prices, search "KR stock price today" (or use the exact date requested). Verify the date of every data point before inclusion.
+---
+
+## Critical Data Rules
+
+- **NEVER use cached or assumed price data.** Always web_search for current stock prices, market data, and real-time metrics.
+- **For any analysis dated "today" or "August 26, 2026,"** verify the date with web_search FIRST — do not rely on search result snippets that may be historical.
+- **If a web_search returns data older than 7 days,** re-search with more specific temporal keywords ("today," "this week") before proceeding.
+- **If you cannot find current data,** explicitly state: "I do not have access to current [X] data as of [date]. Last verified: [date]."
+- **NEVER backfill missing data** with older data, averages, or assumptions.
+- **For stock prices,** search "KR stock price today" (or use the exact date requested). Verify the date of every data point before inclusion.
